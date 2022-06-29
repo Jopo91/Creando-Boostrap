@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Formula Uno</title>
+    <link rel="shortcut icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" id="logo">
+            <img src="../assets/formula-hisotrica.png" alt="logo formula hisotrica" >
+        </a>
+    </header>
+    <!-- barra de navegacion -->
+    <nav class="contenedor"> 
+        <img src="../assets/f1.png" class="navegacion" alt="logo de la formula 1 en rojo">
+        <ul class="navegacion--lista">
+            <li>
+                <a href="../html/equipos.html">EQUIPOS</a>
+            </li>
+            <li>
+                <a href="../html/calendario.html">CALENDARIO</a>
+            </li>
+            <li>
+                <a href="../html/noticias.html">NOTICIAS</a>
+            </li>
+            <li>
+                <a href="../html/galeria.html">GALERIA</a>
+            </li>
+        </ul>
+        <img src="../assets/fia.png" class="navegacion" alt="logo de la federacion internacional del automovil">
+    </nav>
+    <main>
+        <h1>NOTICIAS</h1>
+        <section  class="noticias_linea1"> <!-- grill the grid -->
+                <h2>GRILL THE GRID</h2>
+                <a href="https://www.youtube.com/watch?v=N-255QvCrWY" target="_blank">
+                    <img src="../assets/gtg.jpg" alt="grill the grid videos">
+                </a>
+                <p>Conoce a los mejores pilotos del mundo desde otro punto de vista.</p>
+        </section>
+        <section  class="noticias_linea1"> <!-- power ranking -->
+                <h2>POWER RANKING</h2>
+                <a href="https://www.formula1.com/en/latest/article.power-rankings-who-took-top-spot-after-a-tough-race-in-monaco.5241Azpys0xM6CAtjueomH.html" target="_blank">
+                    <img src="../assets/powran.jpg" alt="power ranking f1">
+                </a>
+                <p>Cada miercoles, despues de la carrera, descubre el power ranking otorgado por los expertos en la categoria.</p>
+        </section>
+        <section class="noticias_linea2"> <!-- ultimas noticias -->
+                <h2>ULTIMAS NOTICIAS</h2>
+                <a href="https://www.formula1.com/en/latest/article.analysis-why-red-bull-and-sergio-perez-extended-their-marriage-until-the-end.4qaSjHCbvKAAK2EWIQtYrk.html" target="_blank">
+                    <img src="../assets/ln.jpg" alt="utimas noticias de f1">
+                </a>
+                <p>Las noticias mas recientes sobre la parrilla de la mejor categoria del automovilismo.</p>
+        </section>
+        <!-- formulario noticias -->
+        <section class="noticias_linea2">
+            <form action="noti.php"> <!-- no existe noti.php -->
+            <h3>NEWSLETTER</h3>
+                <label for="pronombresr">Sr.</label>
+                <input type="radio" id="pronombresr" value="sr" name="pronombre">
+                <label for="pronombresra">Sra.</label>
+                <input type="radio" id="pronombresra" value="sra" name="pronombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Jose Rodriguez" required>
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="niki.lau1@gmail.com" required>
+                <br>
+                <label for="equipofavorito">Equipo Favorito</label>
+                <select name="" id="equipofavorito">
+                    <option value="AR">Alfa Romeo</option>
+                    <option value="AT">AlphaTauri</option>
+                    <option value="AP">Alpine</option>
+                    <option value="AM">Aston Martin</option>
+                    <option value="FR">Ferrari</option>
+                    <option value="HA">HAAS</option>
+                    <option value="ML">McLaren</option>
+                    <option value="MB">Mercedes Bens</option>
+                    <option value="RB">Red Bull</option>
+                    <option value="WM">Williams</option>
+                </select>
+            <br>
+            <input type="submit" value="enviar">
+            </form>
+        </section>
+    </main>
+</body>
+<br>
+<footer>
+    <h3>REDES SOCIALES</h3>
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="../assets/facebook-logo.png" alt="logo facebook" style="height:25px;width:25px;">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+        <img src="../assets/instagram-logo.png" alt="logo instagram" style="height:25px;width:25px;">
+    </a>
+    <a href="https://twitter.com/" target="_blank">
+        <img src="../assets/twitter-logo.png" alt="logo twitter" style="height:25px;width:25px;">
+    </a>
+</footer>
+</html>

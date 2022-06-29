@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Historica</title>
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="assets/formula-hisotrica.png" alt="logo formula hisotrica" >
+        </a>
+    </header>
+    <!-- barra de navegacion -->
+    <nav class="contenedor"> 
+        <img src="assets/f1.png" class="navegacion" alt="logo de la formula 1 en rojo">
+        <ul class="navegacion--lista">
+            <li>
+                <a href="html/equipos.html" class="lista">EQUIPOS</a>
+            </li>
+            <li>
+                <a href="html/calendario.html" class="lista">CALENDARIO</a>
+            </li>
+            <li>
+                <a href="html/noticias.html" class="lista">NOTICIAS</a>
+            </li>
+            <li>
+                <a href="html/galeria.html" class="lista">GALERIA</a>
+            </li>
+        </ul>
+        <img src="assets/fia.png" class="navegacion" alt="logo de la federacion internacional del automovil">
+    </nav>
+    <main class="grids_index">
+        <!-- ultima carrera -->
+        <section class="seccion_video">
+                <h2>ULTIMA CARRERA</h2>
+                <br> <!-- borrar -->
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/Ilyvrg-pwbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <!-- top pilotos -->
+        <section class="seccion_tabla g-pilotos">
+            <table border="2px" cellpadding="3px" cellspacing="3px">
+                <tr>
+                    <th>Pos</th>
+                    <th>Piloto</th>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">1</td>
+                    <td>VER</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">2</td>
+                    <td>PER</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">3</td>
+                    <td>LEC</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">4</td>
+                    <td>RUS</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">5</td>
+                    <td>SAI</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">6</td>
+                    <td>HAM</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">7</td>
+                    <td>NOR</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">8</td>
+                    <td>BOT</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">9</td>
+                    <td>OCO</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">10</td>
+                    <td>MAG</td>
+                </tr>
+            </table>
+        </section>
+        <!-- top equipos -->
+        <section class="seccion_tabla g-equipos">
+            <table border="2px" cellpadding="3px" cellspacing="3px">
+                <tr>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">1</td>
+                    <td>Red Bull</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">2</td>
+                    <td>Ferrari</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">3</td>
+                    <td>Mercedes</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">4</td>
+                    <td>McLaren</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">5</td>
+                    <td>Alfa Romeo</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">6</td>
+                    <td>Alpine</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">7</td>
+                    <td>AlphaTauri</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">8</td>
+                    <td>HAAS</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">9</td>
+                    <td>Aston Martin</td>
+                </tr>
+                <tr>
+                    <td class="izquierda_tabla">10</td>
+                    <td>Williams</td>
+                </tr>
+            </table>
+        </section>
+        <!-- links otros -->
+        <section class="seccion_enlaces">
+            <h3>OTRAS CATEGORIAS</h3>
+            <br> <!-- borrar -->
+            <a href="https://www.fiaformula2.com/" target="_blank">
+                <img src="assets/f2.png" alt="logo competencia formula 2 fia" class="otcls">
+            </a>
+            <a href="https://www.fiaformula3.com/" target="_blank">
+                <img src="assets/f3.png" alt="logo competencia formula 3 fia" class="otcls">
+            </a>
+            <a href="https://wseries.com/" target="_blank">
+                <img src="assets/wser2.png" alt="logo competencia w series fia" class="otcls">
+            </a>
+        </section>
+        <!-- formulario noticias -->
+        <section id="newsletter" class="seccion_registro">
+            <form action="noti.php"> <!-- no existe noti.php -->
+            <h3>NEWSLETTER</h3>
+                <label for="pronombresr">Sr.</label>
+                <input type="radio" id="pronombresr" value="sr" name="pronombre">
+                <label for="pronombresra">Sra.</label>
+                <input type="radio" id="pronombresra" value="sra" name="pronombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Jose Rodriguez" required>
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="niki.lau1@gmail.com" required>
+                <br>
+                <label for="equipofavorito">Equipo Favorito</label>
+                <select name="" id="equipofavorito">
+                    <option value="AR">Alfa Romeo</option>
+                    <option value="AT">AlphaTauri</option>
+                    <option value="AP">Alpine</option>
+                    <option value="AM">Aston Martin</option>
+                    <option value="FR">Ferrari</option>
+                    <option value="HA">HAAS</option>
+                    <option value="ML">McLaren</option>
+                    <option value="MB">Mercedes Bens</option>
+                    <option value="RB">Red Bull</option>
+                    <option value="WM">Williams</option>
+                </select>
+            <input type="submit" value="enviar">
+            </form>
+        </section>
+    </main>
+</body>
+<footer>
+    <h3>REDES SOCIALES</h3>
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="assets/facebook-logo.png" alt="logo facebook" >
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+        <img src="assets/instagram-logo.png" alt="logo instagram">
+    </a>
+    <a href="https://twitter.com/" target="_blank">
+        <img src="assets/twitter-logo.png" alt="logo twitter">
+    </a>
+</footer>
+</html>

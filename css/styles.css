@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* generales*/
+html{
+	font-size: 62.5%;
+}
+
+*{
+	font-family: 'Kdam Thmor Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    background-image: url(../assets/background2.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 6vw;
+    line-height: 6.5vww;
+    display: flex; 
+    justify-content: space-around;
+}
+
+h2{
+    font-size: 3.5vw;
+    line-height: 4vw;
+}
+
+h3{
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+/* header */
+header{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+}
+    header img{
+        width: 40vw;
+    }
+        #logo{
+            display: flex;
+            justify-content: space-around;
+        }  
+
+/* navegacion*/
+.contenedor{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    position: sticky;
+    display: flex;
+    height: 12vh;
+}
+
+    nav ul{
+        list-style: none;
+    }
+        nav ul li a{
+            font-size: 2.5vw;
+            color: azure;
+            text-decoration: none;
+            margin-left: .5vw;
+            margin-right: .5vw;
+        }
+            nav img{
+                width: 15vw;
+            }
+                    .navegacion{
+                        flex-direction: row;
+                        width: 14vw;
+                        align-content: center;
+                        align-items: center;
+                    }
+                    .navegacion--lista{
+                        width: 70vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                    }
+
+/* footer */
+footer{
+background-color: rgba(128, 128, 128, 0.788);
+}
+    footer img{
+        width: 2vw;
+    }
+
+.otcls{
+    width: 14vw;
+}
+
+#newsletter{
+    font-size: 1.5vw;
+}
+
+/* tablas */
+table th{
+    line-height: 2.5vh;
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+}
+
+table td{
+    line-height: 2vw;
+    font-size: 1.5vw;
+}
+    .izquierda_tabla{
+        text-align: 
+        center;
+    }
+
+/* box modeling */
+.seccion_video{
+    background-color: rgba(90, 100, 100, 0.5);
+    margin-top: 2vh;
+    height: 58vh;
+    padding: 1vw 1vw;
+    border: solid 2px black;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.seccion_tabla{
+    background-color: rgba(90, 100, 100, .5);
+    margin-top: 2vh;
+    height: 58vh;
+    padding: 1vw 1vw;
+    border: solid 2px black;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.seccion_enlaces{
+    background-color: rgba(253, 245, 230, .5);
+    margin: 2vw ;
+    padding: auto;
+    border: solid 1px black;
+}
+
+.seccion_registro{
+    border: solid 2px black;
+    margin: 2vw;
+    position: relative;
+}
+
+.grids_index{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "video video pilotos equipos"
+    "enlaces enlaces . news"
+    ;
+}
+
+.seccion_video{
+    grid-area: video;
+}
+
+.g-equipos{
+    grid-area: equipos;
+}
+
+.g-pilotos{
+    grid-area: pilotos;
+}
+
+.seccion_enlaces{
+    grid-area: enlaces;
+}
+
+.seccion_registro{
+    grid-area: news;
+}
+
+.equipos{
+    width: 100vw;
+    margin-top: 15px;
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1vw;
+}
+    .equipos a img{
+        width: 19vw;
+        border: solid 2px black;
+    }
+    .grids--equipo div img{
+        width: 49vw;
+    }
+        .grids--equipo div p{
+            font-size: 3vw;
+        }
+                .grids--equipo div div img{
+                    width: 8vw;
+                }
+
+.grids--equipo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "am ." "am1 am2"
+    "ap ." "ap1 ap2"
+    "ar ." "ar1 ar2"
+    "at ." "at1 at2"
+    "fr ." "fr1 fr2"
+    "ha ." "ha1 ha2"
+    "mb ." "mb1 mb2"
+    "ml ." "ml1 ml2"
+    "rb ." "rb1 rb2"
+    "wl ." "wl1 wl2";
+}
+#am{
+    grid-area: am;
+}
+#ap{
+    grid-area: ap;
+}
+#ar{
+    grid-area: ar;
+}
+#at{
+    grid-area: at;
+}
+#fr{
+    grid-area: fr;
+}
+#ha{
+    grid-area: ha;
+}
+#mb{
+    grid-area: mb;
+}
+#ml{
+    grid-area: ml;
+}
+#rb{
+    grid-area: rb;
+}
+#wl{
+    grid-area: wl;
+}
+#am1{
+    grid-area: am1;
+}
+#am2{
+    grid-area: am2;
+}
+#ap1{
+    grid-area: ap1;
+}
+#ap2{
+    grid-area: ap2;
+}
+#ar1{
+    grid-area: ar1;
+}
+#ar2{
+    grid-area: ar2;
+}
+#at1{
+    grid-area: at1;
+}
+#at2{
+    grid-area: at2;
+}
+#fr1{
+    grid-area: fr1;
+}
+#fr2{
+    grid-area: fr2;
+}
+#ha1{
+    grid-area: ha1;
+}
+#ha2{
+    grid-area: ha2;
+}
+#mb1{
+    grid-area: mb1;
+}
+#mb2{
+    grid-area: mb2;
+}
+#ml1{
+    grid-area: ml1;
+}
+#ml2{
+    grid-area: ml2;
+}
+#rb1{
+    grid-area: rb1;
+}
+#rb2{
+    grid-area: rb2;
+}
+#wl1{
+    grid-area: wl1;
+}
+#wl2{
+    grid-area: wl2;
+}
+
+/* .primera_linea{
+    display: inline-block;
+    margin: 3vw auto;
+}
+
+.segunda_linea{
+    display: inline-block;
+} */
+
+.calendario_tabla{
+    position: relative;
+    left: 27%;
+}
+
+.button_top{
+    width: 10vw;
+    height: 8vw;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    left: 85vw;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 13%;
+}
+    .button_top div{
+        text-decoration-line: none;
+        color: aliceblue;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+.header_settings{
+width: 100vw;
+height: 45vh;
+margin-top: 5vw;
+margin-bottom: 5vw;
+}
+    .header_temporada--img{
+        width: 100vw;
+        height: 95vh;
+        margin-top: 8vw;
+        display: flex;
+        justify-content: center;
+    }
+        .header_temporada--txt.txt_clear{
+            font-size: 8vw;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+        }
+            .header_temporada--txt.txt_opaque{
+                font-size: 8w;
+                color: black;
+                display: flex;
+                justify-content: center;
+            }
+
+.noticias_linea1{
+    margin-top: 2vh;
+    width: 48vw;
+    display: inline-block;
+    background-color: rgba(105, 105, 105, .5);
+    font-size: 1.9vw;
+    border: solid 1px black;
+}
+    .noticias_linea1 img{
+        width: 80vw;
+    }
+.noticias_linea2{
+    width: 48vw;
+    display: inline-block;
+    font-size: 1.9vw;
+}
+    .noticias_linea2 img{
+        width: 60vw;
+    }
+
+
+/* media querys */
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+    nav ul li a{
+        font-size: 3.5vw;
+    }
+    header img{
+        width: 70vw;
+    }
+    .seccion_video{
+        height: auto;
+        width: 98vw;
+    }
+    .seccion_tabla{
+        height: auto;
+        width: 40vw;
+        padding: none;
+    }
+    .grids_index{
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        "video video" "pilotos equipos" "enlaces enlaces" "news news";
+    }
+    .otcls{
+        width: 30vw;
+    }
+    footer img{
+        width: 6vw;
+    }
+    nav img{
+        display: none;
+    }
+    .grids--equipo{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "am" "am1" "am2"
+        "ap" "ap1" "ap2"
+        "ar" "ar1" "ar2"
+        "at" "at1" "at2"
+        "fr" "fr1" "fr2"
+        "ha" "ha1" "ha2"
+        "mb" "mb1" "mb2"
+        "ml" "ml1" "ml2"
+        "rb" "rb1" "rb2"
+        "wl" "wl1" "wl2"
+        ;
+    }
+    .equipos a img{
+        width: 47vw;
+    }
+    .grids--equipo div img{
+        width: 98vw;
+    }
+        .grids--equipo div p{
+            font-size: 5vw;
+        }
+                .grids--equipo div div img{
+                    width: 10vw;
+                }
+}
