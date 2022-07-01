@@ -39,13 +39,21 @@ header{
     background-color: rgb(255, 0, 0);
     width: 100%;
 }
-    header img{
-        width: 40vw;
-    }
-        #logo{
-            display: flex;
-            justify-content: space-around;
-        }  
+        header:hover{
+            background-image: linear-gradient(to right, red, orange );
+            transition: transform 2s;
+        }
+            header img{
+                width: 40vw;
+            }
+                header img:hover{
+                    transform: scale(1.1);
+                    transition: transform 1s;
+                }
+                    #logo{
+                        display: flex;
+                        justify-content: space-around;
+                    }
 
 /* navegacion*/
 .contenedor{
@@ -68,6 +76,10 @@ header{
         }
             nav img{
                 width: 15vw;
+            }
+            nav img:hover{
+                transform: translateX(1.5vw) translateY(-1vw);
+                transition: transform 2s;
             }
                     .navegacion{
                         flex-direction: row;
